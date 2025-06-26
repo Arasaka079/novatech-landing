@@ -5,6 +5,8 @@ import { routing } from '@/i18n/routing';
 
 import { Nunito, Poppins, Roboto } from 'next/font/google';
 import { Container } from '@/components/layout/Container';
+import NavBar from '@/components/layout/Navbar/NavBar';
+
 import './globals.css';
 
 const nunito = Nunito({
@@ -44,7 +46,10 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className={`${nunito.variable} ${poppins.variable} ${roboto.variable}  antialiased`}>
         <Container>
-          <NextIntlClientProvider>{children}</NextIntlClientProvider>
+          <NextIntlClientProvider>
+            <NavBar />
+            {children}
+          </NextIntlClientProvider>
         </Container>
       </body>
     </html>

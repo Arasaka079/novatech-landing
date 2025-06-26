@@ -2,5 +2,36 @@
   "HomePage": {
     "title": "Bonjour le monde !",
     "about": "Allez à la page à propos"
+  },
+  "NavBarMenu": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "servicesSubMenu": {
+      "s1": "Développement Web",
+      "s2": "Développement Mobile",
+      "s3": "Design UI/UX",
+      "s4": "Marketing Digital"
+    },
+    "Portfolio": "Portfolio",
+    "Team": "Équipe",
+    "Blog": "Blog",
+    "Contact": "Contact"
+  },
+
+  "NavBarRoutes": {
+    "home": "/",
+    "about": "#about",
+    "services": "#services",
+    "servicesSubMenu": {
+      "s1": "#services",
+      "s2": "#services",
+      "s3": "#services",
+      "s4": "#services"
+    },
+    "portfolio": "#portfolio",
+    "team": "#team",
+    "blog": "/blog",
+    "contact": "#contact"
   }
 }
